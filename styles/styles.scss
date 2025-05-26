@@ -1,0 +1,26 @@
+@import
+    'normalize', 
+    'fonts', 
+    'mixins', 
+    'media', 
+    'variables', 
+    'utils', 
+    'globals';
+
+@import 
+    'blocks/header',
+    'blocks/hero',
+    'blocks/button',
+    'blocks/card',
+    'blocks/stages',
+    'blocks/calculation',
+    'blocks/about-us',
+    'blocks/what-say',
+    'blocks/reviews',
+    'blocks/scroll-slider',
+    'blocks/video-reviews',
+    'blocks/contacts',
+    'blocks/footer',
+    'blocks/custom-select',
+    'blocks/modal',
+    'blocks/popular-cars';

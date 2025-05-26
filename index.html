@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+        <header class="header">
+        <div class="header__inner container">
+            <a href="#" class="header__logo logo">
+                <img class="logo__image" src="./images/logo.svg" alt="Sewa" width="71" height="71" loading="lazy">
+            </a>
+            <nav class="header__menu hidden-mobile">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="#japan" class="header__menu-link">Японские авто</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#korea" class="header__menu-link">Корейские авто</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#china" class="header__menu-link">Китайские авто</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#europa" class="header__menu-link">Европейские авто</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#contacts" class="header__menu-link-end">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contact">
+                <div class="header__contact-social contact hidden-mobile">
+                    <a href="/" class="header__social-link">
+                        <img src="./images/social/tg.svg" alt="Telegram">
+                    </a>
+                    <a href="/" class="header__social-link">
+                        <img src="./images/social/Youtube.svg" alt="Youtube">
+                    </a>
+                    <a href="/" class="header__social-link">
+                        <img src="./images/social/vk.svg" alt="VK">
+                    </a>  
+                </div>
+                <div class="header__contact-info">
+                    <a href="tel: +7 123 456 70 20" class="header__contact-tel contact hidden-mobile"> +7 123 456 70 20 </a>
+                    <p class="header__contact-text contact hidden-mobile">Написать в Whatsapp</p>
+                </div>
+            </div>
+        </div>
+    </header>
+        <main class="content">
+        <section class="section">
+            <div class="hero">
+                <div class="hero__inner container">
+                    <div class="hero__main">
+                        <h1 class="hero__title">Авто из Японии, Кореи, Китая и Европы </h1>
+                        <p class="hero__description">Экономия с первого шага! Мы не берем комиссию за подбор авто, в отличие <br> от большинства компаний</p>
+                        <button class="hero__button button">Расчитать стоимость</button>
+                        <div class="hero__benefits container">
+                            <div class="hero__stats">
+                                <div class="hero__stats-item">
+                                    <div class="hero__stats-rating">
+                                        <img src="./images/star.svg" alt="" class="hero__stats-image" width="28" height="28" loading="lazy">
+                                        <h3 class="hero__stats-char">4.9</h3>
+                                    </div>
+                                    <p class="hero__stats-desc">рейтинг клиентов</p>
+                                </div>
+                                <div class="hero__stats-item">
+                                    <h3 class="hero__stats-char">10+</h3>
+                                    <p class="hero__stats-desc">лет на рынке</p>
+                                </div>
+                                <div class="hero__stats-item">
+                                    <h3 class="hero__stats-char">0%</h3>
+                                    <p class="hero__stats-desc">комиссии за подбор авто</p>
+                                </div>
+                                <div class="hero__stats-item">
+                                    <h3 class="hero__stats-char">2-4 недели</h3>
+                                    <p class="hero__stats-desc">минимальный срок доставки</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="popular-cars">
+                <div class="popular-cars__inner container">
+                    <div class="popular-cars__korea">
+                        <h3 class="popular-cars__title" id="korea">Популярные корейские авто</h3>
+                        <div class="popular-cars__brands">
+                            <div class="popular-cars__brand">
+                                <img src="./images/brands/Kia.svg" alt="" class="popular-cars__brand-image">
+                                <p class="popular-cars__brand-name">Kia</p>
+                            </div>
+                            <div class="popular-cars__brand">
+                                <img src="./images/brands/Hyndai.svg" alt="" class="popular-cars__brand-image">
+                                <p class="popular-cars__brand-name">Hyndai</p>
+                            </div>
+                            <div class="popular-cars__brand">
+                                <img src="./images/brands/SsangYong.svg" alt="" class="popular-cars__brand-image">
+                                <p class="popular-cars__brand-name">SsangYong</p>
+                            </div>
+                            <div class="popular-cars__country">
+                                <img src="./images/brands/Korea.svg" alt=""  width="64" height="45" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="popular-cars__grid">
+                            <div class="popular-cars__cards">
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="popular-cars__button button">Смотреть все</button>
+                        </div>
+                    </div>
+                    <div class="popular-cars__japan">
+                        <h3 class="popular-cars__title" id="japan">Популярные японские авто</h3>
+                        <div class="popular-cars__brands">
+                            <div class="popular-cars__brand">
+                                <img src="./images/brands/Toyota.svg" alt="" class="popular-cars__brand-image">
+                                <p class="popular-cars__brand-name">Toyota</p>
+                            </div>
+                            <div class="popular-cars__brand">
+                                <img src="./images/brands/Nissan.svg" alt="" class="popular-cars__brand-image">
+                                <p class="popular-cars__brand-name">Nissan</p>
+                            </div>
+                            <div class="popular-cars__brand">
+                                <img src="./images/brands/Honda.svg" alt="" class="popular-cars__brand-image">
+                                <p class="popular-cars__brand-name">Honda</p>
+                            </div>
+                            <div class="popular-cars__brand">
+                                <img src="./images/brands/Mazda.svg" alt="" class="popular-cars__brand-image">
+                                <p class="popular-cars__brand-name">Mazda</p>
+                            </div>
+                            <div class="popular-cars__country">
+                                <img src="./images/brands/Japan.svg" alt="" width="29" height="29" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="popular-cars__grid">
+                            <div class="popular-cars__cards">
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="popular-cars__button button">Смотреть все</button>
+                        </div>
+                    </div>
+                    <div class="popular-cars__сhina">
+                        <h3 class="popular-cars__title" id="china">Популярные китайские авто</h3>
+                        <div class="popular-cars__brands">
+                            <div class="popular-cars__brand">
+                                <img src="./images/brands/Zeekr.svg" alt="" class="popular-cars__brand-image" style= "width: 81px; height: 20px;">
+                            </div>
+                            <div class="popular-cars__brand">
+                                <img src="./images/brands/Chery.svg" alt="" class="popular-cars__brand-image">
+                                <p class="popular-cars__brand-name">Chery</p>
+                            </div>
+                            <div class="popular-cars__brand">
+                                <img src="./images/brands/Haval.svg" alt="" class="popular-cars__brand-image" style= "width: 46px; height: 28px;">
+                            </div>
+                            <div class="popular-cars__brand">
+                                <img src="./images/brands/Changan.svg" alt="" class="popular-cars__brand-image">
+                                <p class="popular-cars__brand-name">Changan</p>
+                            </div>
+                            <div class="popular-cars__country">
+                                <img src="./images/brands/China.svg" alt=""  width="80" height="52" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="popular-cars__grid">
+                            <div class="popular-cars__cards">
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="popular-cars__button button">Смотреть все</button>
+                        </div>
+                    </div>
+                    <div class="popular-cars__europe">
+                        <h3 class="popular-cars__title" id="europa">Популярные европейские авто</h3>
+                        <div class="popular-cars__brands">
+                            <div class="popular-cars__brand">
+                                <img src="./images/brands/audi.svg" alt="" class="popular-cars__brand-image" style= "width: 40px; height: 40px;">
+                            </div>
+                            <div class="popular-cars__brand">
+                                <img src="./images/brands/Volkswagen.svg" alt="" class="popular-cars__brand-image">
+                                <p class="popular-cars__brand-name">Volkswagen</p>
+                            </div>
+                            <div class="popular-cars__brand">
+                                <img src="./images/brands/BMW.svg" alt="" class="popular-cars__brand-image">
+                                <p class="popular-cars__brand-name">BMW</p>
+                            </div>
+                            <div class="popular-cars__brand">
+                                <img src="./images/brands/mersedes-benz.svg" alt="" class="popular-cars__brand-image">
+                                <p class="popular-cars__brand-name">Mersedes</p>
+                            </div>
+                            <div class="popular-cars__country">
+                                <img src="./images/brands/Europa.svg" alt="" width="80" height="52" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="popular-cars__grid">
+                            <div class="popular-cars__cards">
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popular-cars__card card">
+                                    <div class="card__image">
+                                        <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
+                                        <h6 class="card__image-characteristic">1 тыс. км</h6>
+                                    </div>
+                                    <div class="card__down">
+                                        <div class="card__description">
+                                            <p class="card__description-title">Hyundai Palisade</p>
+                                            <p class="card__description-characteristic">2018 • 2.0 л • 4WD • Бензин • АКПП</p>
+                                        </div>
+                                        <div class="card__price">
+                                            <p class="card__price-price">5 500 000 ₽</p>
+                                            <button class="popular-cars__button button--transparent">Оставить заявку</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="popular-cars__button button">Смотреть все</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="stages">
+                <div class="stages__inner container" id="stages">
+                    <div class="stages__content">
+                        <div class="stages__text">
+                            <h3 class="stages__text-title">Этапы работы</h3>
+                            <p class="stages__text-description">Полное сопровождение сделки и поддержка связи с клиентом 24/7.</p>
+                        </div>
+                        <div class="stages__steps">
+                            <div class="stages__step">
+                                <div class="stages__step-number">
+                                    <p>01</p>
+                                </div>
+                                <div class="stages__step-text">
+                                    <p class="stages__step-title">Договор</p>
+                                    <p class="stages__step-description">Уточнение информации для поиска авто, подписание договора</p>
+                                </div>
+                            </div>
+                            <div class="stages__step">
+                                <div class="stages__step-number">
+                                    <p>02</p>
+                                </div>
+                                <div class="stages__step-text">
+                                    <p class="stages__step-title">Подбор</p>
+                                    <p class="stages__step-description">Осуществляем поиск автомобиля по заданным параметрам</p>
+                                </div>
+                            </div>
+                            <div class="stages__step">
+                                <div class="stages__step-number">
+                                    <p>03</p>
+                                </div>
+                                <div class="stages__step-text">
+                                    <p class="stages__step-title">Доставка</p>
+                                    <p class="stages__step-description">Доставка авто в любую точку мира под ключ</p>
+                                </div>
+                            </div>
+                            <div class="stages__step">
+                                <div class="stages__step-number">
+                                    <p>04</p>
+                                </div>
+                                <div class="stages__step-text">
+                                    <p class="stages__step-title">Передача</p>
+                                    <p class="stages__step-description">Передача Вам автомобиля, а также полного пакета документов</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stages__delivery">
+                        <div class="stages__form">
+                            <div class="stages__form-text">
+                                <h3 class="stages__form-title">Стоимость доставки</h3>
+                                <p class="stages__form-description">Подготовим машину к отгрузке и отправке в ваш город автовозом Минимальный срок доставки 2-4 недели</p>
+                            </div>
+                            <div class="stages__form-input">
+                                <div class="custom-select">
+                                    <div class="custom-select__header">Куда доставляем?</div>
+                                    <div class="custom-select__body">
+                                        <div class="custom-select__option">Волгоград</div>
+                                        <div class="custom-select__option">Владивосток</div>
+                                        <div class="custom-select__option">Пермь</div>
+                                        <div class="custom-select__option">Казань</div>
+                                        <div class="custom-select__option">Артем</div>
+                                    </div>
+                                </div>
+                                <div class="custom-select">
+                                    <div class="custom-select__header">Выберите кузов</div>
+                                    <div class="custom-select__body">
+                                        <div class="custom-select__option">Любой</div>
+                                        <div class="custom-select__option">Audi</div>
+                                        <div class="custom-select__option">BMW</div>
+                                        <div class="custom-select__option">Range Rover</div>
+                                        <div class="custom-select__option">Mercedes</div>
+                                        <div class="custom-select__option">Volkswagen</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stages__form-price">
+                                <div class="stages__price">
+                                    <p class="stages__price-text">Стоимость доставки:</p>
+                                    <p class="stages__price-number">от 15 000 ₽</p>
+                                </div>
+                                <div class="stages__button button">Оставить заявку</div>
+                            </div>
+                            <div class="stages__form-info">
+                                <p>Cроки и стоимость указаны для доставки из Владивостока до Вашего города. Время ожидания к отправке из Владивостока: от 1 до 20 дней</p>
+                            </div>
+                        </div>
+                        <div class="stages__image">
+                            <img src="./images/block.svg" alt="" class="stages__image-block">
+                            <img src="./images/stages-car.svg" alt="" class="stages__image-car">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="calculation">
+                <div class="calculation__inner container">
+                    <h1 class="calculation__title">Нужен расчёт стоимости авто?</h1>
+                    <p class="calculation__description">Оставьте заявку и наши специалисты подберут Вам автомобиль под Ваши требования</p>
+                    <button class="calculation__button button">Оставить заявку</button>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="about-us">
+                <div class="about-us__inner container">
+                    <div class="about-us__content">
+                        <div class="about-us__text">
+                            <h3 class="about-us__text-title">О компании SEWA</h3>
+                            <div class="about-us__text-description">
+                                <p>SEWA MOTORS — компания, которая занимается экспортом автомобилей и запчастей из Южной Кореи. <br> Мы не посредники, все автомобили мы выкупаем напрямую у дилеров / заводов или с аукционов и привозим их под ключ за 2-4 недели. Компания SEWA MOTORS на рынке уже более 10 лет и обладает заслуженной репутацией. </p>
+                                <p>Мы работаем с партнерами в России и странах СНГ, ОАЭ, Европе. В том числе, наша компания получила две золотых статуэтки - награду от президента Южной Кореи за оборот более 20.000.000$ / год и 25.000.000$ / год. Экспортная компания SEWA MOTORS одна из крупнейших в Южной Корее.</p>
+                            </div>
+                        </div>
+                        <div class="about-us__reason">
+                            <div class="about-us__reason-text">
+                                <p class="about-us__reason-title">Почему стоит выбрать нас?</p>
+                                <p class="about-us__reason-description">Работаем на прямую, по этому не берем никаких комиссий за наши услуги</p>
+                            </div>
+                            <div class="about-us__reason-grid">
+                                <div class="about-us__cell">
+                                    <div class="about-us__cell-icon">
+                                        <img src="./images/icon/description.svg" alt="" width="24" height="24">
+                                    </div>
+                                    <p class="about-us__cell-title">Отчётность</p>
+                                    <p class="about-us__cell-text">Предоставляем вам подробный фото и видео-отчет по выбранному автомобилю.</p>
+                                </div>
+                                <div class="about-us__cell">
+                                    <div class="about-us__cell-icon">
+                                        <img src="./images/icon/schedule.svg" alt="" width="24" height="24">
+                                    </div>
+                                    <p class="about-us__cell-title">Экономия времени</p>
+                                    <p class="about-us__cell-text">Мы работаем быстро и эффективно, осмотр авто за 24 часа с момента подачи заявки клиентом.</p>
+                                </div>
+                                <div class="about-us__cell">
+                                    <div class="about-us__cell-icon">
+                                        <img src="./images/icon/saving.svg" alt="" width="24" height="24">
+                                    </div>
+                                    <p class="about-us__cell-title">Выгодные условия</p>
+                                    <p class="about-us__cell-text">SEWA MOTORS уверены в том, что предоставляют самые выгодные условия и самые низкие цены на рынке.</p>
+                                </div>
+                                <div class="about-us__cell">
+                                    <div class="about-us__cell-icon">
+                                        <img src="./images/icon/verified.svg" alt="" width="24" height="24">
+                                    </div>
+                                    <p class="about-us__cell-title">Официально</p>
+                                    <p class="about-us__cell-text">Наши профессионалы тщательно отбирают автомобили, обеспечивая их отличное состояние и соответствие самым высоким стандартам.</p>
+                                </div>
+                                <div class="about-us__cell">
+                                    <div class="about-us__cell-icon">
+                                        <img src="./images/icon/thumb_up.svg" alt="" width="24" height="24">
+                                    </div>
+                                    <p class="about-us__cell-title">Честно</p>
+                                    <p class="about-us__cell-text">Наша команда подберет для вас самый выгодный вариант авто, с выездом на осмотр, проверит историю страхования и предоставит все документы на авто.</p>
+                                </div>
+                                <div class="about-us__cell">
+                                    <div class="about-us__cell-icon">
+                                        <img src="./images/icon/group.svg" alt="" width="24" height="24">
+                                    </div>
+                                    <p class="about-us__cell-title">Без посредников</p>
+                                    <p class="about-us__cell-text">Мы работаем напрямую с дилерами, заводами и аукционами ЮК и осуществляем полный контроль на всех этапах: от подбора автомобиля до его доставки из Южной Кореи.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-us__image">
+                        <img src="./images/about-us-logo.png" alt="" class="about-us__image-logo" width="467" height="500">
+                        <div class="about-us__image-info">
+                            <p class="about-us__image-text">Экономия с первого шага! Мы не берем комиссию за подбор авто, в отличие от большинства компаний</p>
+                            <img src="./images/promotion.svg" class="about-us__image-promotion" alt="" width="143" height="143">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="what-say">
+                <div class="what-say__inner container">
+                    <div class="what-say__title">
+                        <h3>Что говорят наши клиенты</h3>
+                    </div>
+                    <div class="what-say__rating">
+                        <div class="what-say__rating-cell">
+                            <div class="what-say__rating-sochial">
+                                <img src="./images/social/google.svg" class="about-us__rating-logo" alt="" width="76" height="77">
+                            </div>
+                            <div class="what-say__rating-content">
+                                <div class="what-say__grade">
+                                    <div class="what-say__grade-number">4.0</div>
+                                    <div class="what-say__grade-rating">
+                                        <img src="./images/Rating.svg" alt="" class="what-say__star">
+                                        <p class="what-say__text">20 оценок</p>
+                                    </div>
+                                </div>
+                                <div class="what-say__link">
+                                    <div class="what-say__link-text">
+                                        <a href="">Мы на vl.ru справочник</a>
+                                    </div>
+                                    <div class="what-say__link-icon">
+                                        <a href="">
+                                            <img src="./images/arrow-up-right.svg" alt="" width="20" height="20">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="what-say__rating-cell">
+                            <div class="what-say__rating-sochial">
+                                <img src="./images/social/2gis (2).svg" class="about-us__rating-logo" alt="" width="76" height="77">
+                            </div>
+                            <div class="what-say__rating-content">
+                                <div class="what-say__grade">
+                                    <div class="what-say__grade-number">4.9</div>
+                                    <div class="what-say__grade-rating">
+                                        <img src="./images/Rating.svg" alt="" class="what-say__star">
+                                        <p class="what-say__text">100 оценок</p>
+                                    </div>
+                                </div>
+                                <div class="what-say__link">
+                                    <div class="what-say__link-text">
+                                        <a href="">Мы в 2ГИС</a>
+                                    </div>
+                                    <div class="what-say__link-icon">
+                                        <a href="">
+                                            <img src="./images/arrow-up-right.svg" alt="" width="20" height="20">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="what-say__rating-cell">
+                            <div class="what-say__rating-sochial">
+                                <img src="./images/social/yandex (2).svg" class="about-us__rating-logo" alt="" width="76" height="77">
+                            </div>
+                            <div class="what-say__rating-content">
+                                <div class="what-say__grade">
+                                    <div class="what-say__grade-number">4.9</div>
+                                    <div class="what-say__grade-rating">
+                                        <img src="./images/Rating.svg" alt="" class="what-say__star">
+                                        <p class="what-say__text">1000 оценок</p>
+                                    </div>
+                                </div>
+                                <div class="what-say__link">
+                                    <div class="what-say__link-text">
+                                        <a href="">Мы в Яндекс</a>
+                                    </div>
+                                    <div class="what-say__link-icon">
+                                        <a href="">
+                                            <img src="./images/arrow-up-right.svg" alt="" width="20" height="20">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="reviews">
+                <div class="reviews__inner container">
+                    <h3 class="reviews__title">Отзывы</h3>
+                    <div id="slider" class="reviews__scroll-slider scroll-slider">
+                        <div class="reviews__slide">
+                            <img src="./images/photo-client.png" alt="" class="reviews__image" width="338" height="214">
+                            <div class="reviews__content">
+                                <div class="reviews__content-rating">
+                                    <div class="reviews__rating-title">
+                                        <p class="reviews__rating-name">Сергей Б.</p>
+                                        <img src="./images/Rating.svg" alt="" class="reviews__rating-star" width="86" height="14">
+                                    </div>
+                                    <img src="./images/Logo-yandex.svg" alt="" class="reviews__rating-sohial" width="34" height="34">
+                                </div>
+                                <div class="reviews__content-text">
+                                    <p class="reviews__text-review">Хочу оставить большущую благодарность компании батарейка! Начали работу с ними в июле месяце. До Владивостока машину из Кореи доставили за месяц. Все четко на каждом из этапов. Дольше ждал транспортную компанию с доставкой авто.</p>
+                                    <p class="reviews__text-data">20.02.2025</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__slide">
+                            <img src="./images/photo-client.png" alt="" class="reviews__image" width="338" height="214">
+                            <div class="reviews__content">
+                                <div class="reviews__content-rating">
+                                    <div class="reviews__rating-title">
+                                        <p class="reviews__rating-name">Сергей Б.</p>
+                                        <img src="./images/Rating.svg" alt="" class="reviews__rating-star" width="86" height="14">
+                                    </div>
+                                    <img src="./images/Logo-yandex.svg" alt="" class="reviews__rating-sohial" width="34" height="34">
+                                </div>
+                                <div class="reviews__content-text">
+                                    <p class="reviews__text-review">Хочу оставить большущую благодарность компании батарейка! Начали работу с ними в июле месяце. До Владивостока машину из Кореи доставили за месяц. Все четко на каждом из этапов. Дольше ждал транспортную компанию с доставкой авто.</p>
+                                    <p class="reviews__text-data">20.02.2025</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__slide">
+                            <img src="./images/photo-client.png" alt="" class="reviews__image" width="338" height="214">
+                            <div class="reviews__content">
+                                <div class="reviews__content-rating">
+                                    <div class="reviews__rating-title">
+                                        <p class="reviews__rating-name">Сергей Б.</p>
+                                        <img src="./images/Rating.svg" alt="" class="reviews__rating-star" width="86" height="14">
+                                    </div>
+                                    <img src="./images/Logo-yandex.svg" alt="" class="reviews__rating-sohial" width="34" height="34">
+                                </div>
+                                <div class="reviews__content-text">
+                                    <p class="reviews__text-review">Хочу оставить большущую благодарность компании батарейка! Начали работу с ними в июле месяце. До Владивостока машину из Кореи доставили за месяц. Все четко на каждом из этапов. Дольше ждал транспортную компанию с доставкой авто.</p>
+                                    <p class="reviews__text-data">20.02.2025</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__slide">
+                            <img src="./images/photo-client.png" alt="" class="reviews__image" width="338" height="214">
+                            <div class="reviews__content">
+                                <div class="reviews__content-rating">
+                                    <div class="reviews__rating-title">
+                                        <p class="reviews__rating-name">Сергей Б.</p>
+                                        <img src="./images/Rating.svg" alt="" class="reviews__rating-star" width="86" height="14">
+                                    </div>
+                                    <img src="./images/Logo-yandex.svg" alt="" class="reviews__rating-sohial" width="34" height="34">
+                                </div>
+                                <div class="reviews__content-text">
+                                    <p class="reviews__text-review">Хочу оставить большущую благодарность компании батарейка! Начали работу с ними в июле месяце. До Владивостока машину из Кореи доставили за месяц. Все четко на каждом из этапов. Дольше ждал транспортную компанию с доставкой авто.</p>
+                                    <p class="reviews__text-data">20.02.2025</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__slide">
+                            <img src="./images/photo-client.png" alt="" class="reviews__image" width="338" height="214">
+                            <div class="reviews__content">
+                                <div class="reviews__content-rating">
+                                    <div class="reviews__rating-title">
+                                        <p class="reviews__rating-name">Сергей Б.</p>
+                                        <img src="./images/Rating.svg" alt="" class="reviews__rating-star" width="86" height="14">
+                                    </div>
+                                    <img src="./images/Logo-yandex.svg" alt="" class="reviews__rating-sohial" width="34" height="34">
+                                </div>
+                                <div class="reviews__content-text">
+                                    <p class="reviews__text-review">Хочу оставить большущую благодарность компании батарейка! Начали работу с ними в июле месяце. До Владивостока машину из Кореи доставили за месяц. Все четко на каждом из этапов. Дольше ждал транспортную компанию с доставкой авто.</p>
+                                    <p class="reviews__text-data">20.02.2025</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__slide">
+                            <img src="./images/photo-client.png" alt="" class="reviews__image" width="338" height="214">
+                            <div class="reviews__content">
+                                <div class="reviews__content-rating">
+                                    <div class="reviews__rating-title">
+                                        <p class="reviews__rating-name">Сергей Б.</p>
+                                        <img src="./images/Rating.svg" alt="" class="reviews__rating-star" width="86" height="14">
+                                    </div>
+                                    <img src="./images/Logo-yandex.svg" alt="" class="reviews__rating-sohial" width="34" height="34">
+                                </div>
+                                <div class="reviews__content-text">
+                                    <p class="reviews__text-review">Хочу оставить большущую благодарность компании батарейка! Начали работу с ними в июле месяце. До Владивостока машину из Кореи доставили за месяц. Все четко на каждом из этапов. Дольше ждал транспортную компанию с доставкой авто.</p>
+                                    <p class="reviews__text-data">20.02.2025</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__slide">
+                            <img src="./images/photo-client.png" alt="" class="reviews__image" width="338" height="214">
+                            <div class="reviews__content">
+                                <div class="reviews__content-rating">
+                                    <div class="reviews__rating-title">
+                                        <p class="reviews__rating-name">Сергей Б.</p>
+                                        <img src="./images/Rating.svg" alt="" class="reviews__rating-star" width="86" height="14">
+                                    </div>
+                                    <img src="./images/Logo-yandex.svg" alt="" class="reviews__rating-sohial" width="34" height="34">
+                                </div>
+                                <div class="reviews__content-text">
+                                    <p class="reviews__text-review">Хочу оставить большущую благодарность компании батарейка! Начали работу с ними в июле месяце. До Владивостока машину из Кореи доставили за месяц. Все четко на каждом из этапов. Дольше ждал транспортную компанию с доставкой авто.</p>
+                                    <p class="reviews__text-data">20.02.2025</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__slide">
+                            <img src="./images/photo-client.png" alt="" class="reviews__image" width="338" height="214">
+                            <div class="reviews__content">
+                                <div class="reviews__content-rating">
+                                    <div class="reviews__rating-title">
+                                        <p class="reviews__rating-name">Сергей Б.</p>
+                                        <img src="./images/Rating.svg" alt="" class="reviews__rating-star" width="86" height="14">
+                                    </div>
+                                    <img src="./images/Logo-yandex.svg" alt="" class="reviews__rating-sohial" width="34" height="34">
+                                </div>
+                                <div class="reviews__content-text">
+                                    <p class="reviews__text-review">Хочу оставить большущую благодарность компании батарейка! Начали работу с ними в июле месяце. До Владивостока машину из Кореи доставили за месяц. Все четко на каждом из этапов. Дольше ждал транспортную компанию с доставкой авто.</p>
+                                    <p class="reviews__text-data">20.02.2025</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__slide">
+                            <img src="./images/photo-client.png" alt="" class="reviews__image" width="338" height="214">
+                            <div class="reviews__content">
+                                <div class="reviews__content-rating">
+                                    <div class="reviews__rating-title">
+                                        <p class="reviews__rating-name">Сергей Б.</p>
+                                        <img src="./images/Rating.svg" alt="" class="reviews__rating-star" width="86" height="14">
+                                    </div>
+                                    <img src="./images/Logo-yandex.svg" alt="" class="reviews__rating-sohial" width="34" height="34">
+                                </div>
+                                <div class="reviews__content-text">
+                                    <p class="reviews__text-review">Хочу оставить большущую благодарность компании батарейка! Начали работу с ними в июле месяце. До Владивостока машину из Кореи доставили за месяц. Все четко на каждом из этапов. Дольше ждал транспортную компанию с доставкой авто.</p>
+                                    <p class="reviews__text-data">20.02.2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="next-btn" class="reviews__arrow">
+                        <img src="./images/chevron-right.svg" alt="" width="24" >
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="video-reviews">
+                <div class="video-reviews__inner container">
+                    <div class="video-reviews__text">
+                        <div class="video-reviews__title">
+                            <img src="./images/YouTube Icon.svg" alt="" class="video-reviews__title-icon">
+                            <h3 class="video-reviews__title-text">Видео отзывы</h3>
+                        </div>
+                        <a href="" class="video-reviews__link">Смотреть все</a>
+                    </div>
+                    <div class="video-reviews__scroll-slider scroll-slider">
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video Thumbnail.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video Thumbnail.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video Thumbnail.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video Thumbnail.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video Thumbnail.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video Thumbnail.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video Thumbnail.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video Thumbnail.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video Thumbnail.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video Thumbnail.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video Thumbnail.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="video-reviews">
+                <div class="video-reviews__inner container">
+                    <div class="video-reviews__text">
+                        <div class="video-reviews__title">
+                            <img src="./images/YouTube Icon.svg" alt="" class="video-reviews__title-icon">
+                            <h3 class="video-reviews__title-text">Обзоры</h3>
+                        </div>
+                        <a href="" class="video-reviews__link">Смотреть все</a>
+                    </div>
+                    <div class="video-reviews__scroll-slider scroll-slider">
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video survey.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video survey.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video survey.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video survey.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video survey.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video survey.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video survey.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video survey.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video survey.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Video survey.png" alt="" class="video-reviews__slide-preview" width="267" height="150">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="video-reviews">
+                <div class="video-reviews__inner container">
+                    <div class="video-reviews__text">
+                        <div class="video-reviews__title">
+                            <img src="./images/YoutubeShorts-logo.svg" alt="" class="video-reviews__title-icon">
+                            <h3 class="video-reviews__title-text">Shorts</h3>
+                        </div>
+                        <a href="" class="video-reviews__link">Смотреть все</a>
+                    </div>
+                    <div class="video-reviews__scroll-slider scroll-slider">
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Shorts.png" alt="" class="video-reviews__slide-preview" width="158" height="269">
+                            <p class="video-reviews__slide-title">АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Shorts.png" alt="" class="video-reviews__slide-preview" width="158" height="269">
+                            <p class="video-reviews__slide-title">АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Shorts.png" alt="" class="video-reviews__slide-preview" width="158" height="269">
+                            <p class="video-reviews__slide-title">АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Shorts.png" alt="" class="video-reviews__slide-preview" width="158" height="269">
+                            <p class="video-reviews__slide-title">АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Shorts.png" alt="" class="video-reviews__slide-preview" width="158" height="269">
+                            <p class="video-reviews__slide-title">АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Shorts.png" alt="" class="video-reviews__slide-preview" width="158" height="269">
+                            <p class="video-reviews__slide-title">АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Shorts.png" alt="" class="video-reviews__slide-preview" width="158" height="269">
+                            <p class="video-reviews__slide-title">АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Shorts.png" alt="" class="video-reviews__slide-preview" width="158" height="269">
+                            <p class="video-reviews__slide-title">АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Shorts.png" alt="" class="video-reviews__slide-preview" width="158" height="269">
+                            <p class="video-reviews__slide-title">АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
+                        </a>
+                        <a href="" class="video-reviews__slide">
+                            <img src="./images/Shorts.png" alt="" class="video-reviews__slide-preview" width="158" height="269">
+                            <p class="video-reviews__slide-title">АВТО ДЛЯ НАСТОЯЩЕЙ ЦАР...</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="contacts" id="contacts">
+                <div class="contacts__inner container">
+                    <div class="contacts__body">
+                        <div class="contacts__info">
+                            <div class="contacts__info-text">
+                                <h1 class="contacts__info-title">Контакты</h1>
+                                <div class="contacts__info-description">Оставьте свою заявку и наш менеджер свяжется с Вами для уточнения деталей.</div>
+                            </div>
+                            <div class="contacts__content">
+                                <div class="contacts__inf">
+                                    <p class="contacts__inf-title">Позвонить</p>
+                                    <a href="tel: 878-88-01899" class="contacts__inf-link"> 878-88-01899 </a>
+                                </div>
+                                <div class="contacts__inf">
+                                    <p class="contacts__inf-title" >Написать</p>
+                                    <a href="" class="contacts__inf-link"> sewa2020@daum.net </a>
+                                </div>
+                                <div class="contacts__inf">
+                                    <p class="contacts__inf-title">Адрес</p>
+                                    <p class="contacts__inf-link">2603-3, Sewa Motors, 32, Songdogwahak-ro, Yeonsu-gu, Incheon, Republic of Korea.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__form"> 
+                            <div class="contacts__form-text">
+                                <p class="contacts__form-title">Оставить заявку</p>
+                            </div>
+                            <div class="contacts__form-input">
+                                <form action="" class="contacts__login" id="contactForm">
+                                    <div class="contacts__fields">
+                                        <div class="contacts__field">
+                                            <label class="contacts__label" for="name">Имя</label>
+                                            <input class="contacts__field-input"
+                                            type="text"
+                                            id="name"
+                                            name="name"
+                                            placeholder="Ваше имя"
+                                            required
+                                            />
+                                        </div>
+                                        <div class="contacts__field">
+                                            <label class="contacts__label" for="phone">Телефон</label>
+                                            <input class="contacts__field-input"
+                                            type="tel"
+                                            id="phone"
+                                            name="phone"
+                                            placeholder="+7 (___) ___-__-__"
+                                            pattern="^\+7\s?\(?\d{3}\)?\s?\d{3}-?\d{2}-?\d{2}$"
+                                            required
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="contacts__field-textarea">
+                                        <label class="contacts__label" for="message">Уточните свой вопрос</label>
+                                        <textarea class="contacts__textarea"
+                                        id="message"
+                                        name="message"
+                                        placeholder="Введите текст сообщения"
+                                        ></textarea>
+                                    </div>
+                                    <div class="contacts__button">
+                                        <div class="contacts__button-checkbox">
+                                            <input class="contacts__checkbox" type="checkbox" id="agree" name="agree" required />
+                                            <label for="agree" class="contacts__label">С правилами политики конфиденциальности ознакомлен</label>
+                                        </div>
+                                        <button type="submit" class="contacts__button-button button--transparent">Отправить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal" id="formModal">
+            <div class="modal__content">
+                <img src="./images/check.svg" alt="" class="modal__icon">
+                <h2 class="modal__title">Заявка отправлена</h2>
+                <p class="modal__text">Мы ответим Вам в ближайшее время</p>
+                <button class="modal__close" aria-label="Закрыть">&times;</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__header-inner header__inner container">
+                <a href="/" class="header__logo logo">
+                    <img class="logo__image" src="./images/logo.svg" alt="Sewa" width="71" height="71" loading="lazy">
+                </a>
+                <nav class="header__menu hidden-mobile">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="#japan" class="header__menu-link">Японские авто</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#korea" class="header__menu-link">Корейские авто</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#china" class="header__menu-link">Китайские авто</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#europa" class="header__menu-link">Европейские авто</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#contacts" class="header__menu-link-end">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__contact">
+                    <div class="header__contact-social contact hidden-mobile">
+                        <a href="/" class="header__social-link">
+                            <img src="./images/social/tg.svg" alt="Telegram">
+                        </a>
+                        <a href="/" class="header__social-link">
+                            <img src="./images/social/Youtube.svg" alt="Youtube">
+                        </a>
+                        <a href="/" class="header__social-link">
+                            <img src="./images/social/vk.svg" alt="VK">
+                        </a>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer__additionally">
+                <p> Все права зарегистрированы.</p>
+                <p>© 2021 Sewa Motors</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/scroll-slider.js"></script>
+    <script src="js/custom-select.js"></script>
+    <script src="js/contactForm.js"></script>
+</body>
+</html>
