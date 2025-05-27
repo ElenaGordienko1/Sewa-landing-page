@@ -37,7 +37,7 @@ README.md              # Этот файл с описанием проекта
 
 1. Клонируйте репозиторий:
 ```
-git clone https://github.com/ElenaGordienko1/sewa-landing-page.git
+git clone https://github.com/ElenaGordienko1/Sewa-landing-page.git
 ```
 2. Перейдите в папку проекта:
 ```
