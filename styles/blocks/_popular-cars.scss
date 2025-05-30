@@ -7,6 +7,15 @@
         gap: 120px;
         background: var(--color-light);
         border-radius: 60px 60px 0px 0px;
+
+        @include mobile{
+            padding: 16px 8px 24px 8px;
+            gap: 40px;
+            border-radius: 24px 24px 0px 0px;
+            margin: 0px 8px 0px 8px;
+            height: 100%;
+            scrollbar-width: none;
+        }
     }
 
     &__title {
@@ -17,6 +26,16 @@
         font-size: 48px;
         line-height: 65px;
         color: var(--color-dark);
+
+        @include mobile{
+            width: 358px;
+            height: 88px;
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 44px;
+            margin-bottom: 24px;
+
+        }
     }
 
     &__brands {
@@ -27,6 +46,11 @@
         width: 464px;
         height: 52px;
         margin-bottom: 28px;
+
+        @include mobile {
+            width: 358px;
+            height: 40px;
+        }
     }
 
     &__brand {
@@ -46,11 +70,35 @@
             font-size: 13px;
             line-height: 28px;
             color: var(--color-dark);
+
+            @include mobile{
+                display: none;
+            }
         }
 
         &-image {
             width: 30px;
             height: 24px;
+        }
+
+        &-zeekr{
+            display:block;
+
+            @include mobile{
+                display: none;
+            }
+        }
+        
+        &-zeekr-abb{
+            display:none;
+
+            @include mobile{
+                display: block;
+            }
+        }
+
+        @include mobile{
+            padding: 8px 16px;
         }
     }
 
@@ -64,6 +112,43 @@
         background: var(--color-light);
         border: 1px solid var(--color-border-grey);
         border-radius: 12px;
+
+        &-knr{
+            width: 64.45px;
+            height: 45.7px;
+
+            @include mobile{
+                width: 45px;
+                height: 35px;
+            }
+        }
+
+        &-chn{
+            width: 80px;
+            height: 52px;
+
+            @include mobile{
+                width: 60px;
+                height: 40px;
+            }
+        }
+
+        &-eur{
+            width: 80px;
+            height: 52px;
+
+            @include mobile{
+                width: 60px;
+                height: 40px;
+            }
+        }
+
+
+        @include mobile{
+            width: 60px;
+            height: 40px;
+            padding: 7px 0px 7px 0px;
+        }
     }
 
     &__cards {
@@ -76,6 +161,28 @@
         gap: 30px 16px;
         width: auto;
         height: 706px;
+
+        @include mobile{
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+            width: 358px;
+            height: 338px;
+            scrollbar-width: none;
+        }
+    }
+
+    &__card{
+        @include mobile{
+            flex: 0 0 auto;
+            min-width: 338px;
+            scroll-snap-align: start;
+        }
+
+        @include desktop{
+            flex: 0 0 auto;
+            scroll-snap-align: start;
+        }
     }
 
     &__grid {
@@ -84,5 +191,9 @@
         align-items: center;
         justify-content: center;
         gap: 32px;
+
+        @include mobile{
+            align-items: flex-start;
+        }
     }
 }

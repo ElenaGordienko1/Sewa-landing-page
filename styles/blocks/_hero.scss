@@ -1,9 +1,20 @@
 .hero {
     padding-top: 74px;
     padding-bottom: 40px;
-    background: url('/images/Image.png') right/cover no-repeat;
+    background: url('/images/image.png') right/cover no-repeat;
     background-position: calc(100% - 47px) 100%;
     background-size: auto;
+
+    @include mobile{
+        background-size: 600px;
+        background-position: right calc(0% + 30px);
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
+
+    @include desktop{
+        background-position: 100%;
+    }
 
     &__title {
         width: 774px;
@@ -12,6 +23,14 @@
         font-size: 60px;
         color: var(--color-light);
         margin-bottom: 24px;
+
+        @include mobile{
+            width: 362px;
+            height: 141px;
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 47px;
+        }
     }
 
     &__description {
@@ -23,6 +42,33 @@
         letter-spacing: 0.01em;
         color: var(--color-light);
         margin-bottom: 48px;
+
+        @include mobile{
+            display: none;
+        }
+    }
+
+    &__description-mobile{
+        display: none;
+
+        @include mobile{
+            display: block;
+            width: 358px;
+            height: 56px;
+            margin-bottom: 48px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 28px;
+            color: var(--color-light);
+        }
+    }
+
+    &__button{
+        @include mobile{
+            height: 65px;
+        }
     }
 
     &__stats {
@@ -43,6 +89,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            @include mobile{
+                min-width: 134px;
+            }
         }
 
         &-char {
@@ -63,6 +113,64 @@
             flex: none;
             order: 1;
             flex-grow: 0;
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__stats-mobile {
+        display: none;
+    
+        @include mobile {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            width: 358px;
+            height: 138px;
+            margin-top: 24px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            
+            &-rating {
+                display: flex;
+                align-items: center;
+            }
+
+            &-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &-char {
+                height: 38px;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 38px;
+                text-align: center;
+                color: var(--color-light);
+            }
+
+            &-desc {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                text-align: center;
+                color: var(--color-light-60);
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+            }
+        }
+    }
+
+    &__benefits{
+
+        @include mobile{
+            padding: 0px;
         }
     }
 }

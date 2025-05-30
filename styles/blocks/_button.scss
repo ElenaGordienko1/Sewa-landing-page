@@ -22,6 +22,10 @@
         background-color: var(--color-accent-alt);
     }
 
+    @include mobile{
+        width: 358px;
+    }
+
     &--transparent {
         border: none;
         display: flex;

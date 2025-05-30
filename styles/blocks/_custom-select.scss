@@ -4,6 +4,10 @@
   font-family: inherit;
   user-select: none;
 
+  @include mobile{
+      width: 310px;
+  }
+
   &__header {
     padding: 16px;
     border: 1px solid var(--color-border-light);
@@ -16,6 +20,11 @@
     background-image: url('/images/chevron-down.svg');
     background-repeat: no-repeat;
     background-position: right 16px center;
+
+    @include mobile{
+      width: 310px;
+      height: 52px;
+    }
   }
 
   &__body {

@@ -11,7 +11,14 @@
         padding: 80px 100px;
         height: 380px;
         
-
+        @include mobile{
+            padding: 64px 8px;
+            gap: 10px;
+            background: url('/images/calculation-mobile.png') right/cover no-repeat;
+            background-color: rgba(0, 60, 180, 0.25);
+            width: 374px;
+            height: 344px;
+        }
 
     }
 
@@ -24,6 +31,14 @@
         margin-bottom: 8px;
         color: var(--color-light);
 
+        @include mobile{
+            width: 358px;
+            height: 88px;
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 44px;
+            text-align: center;
+        }
     }
 
     &__description{
@@ -37,6 +52,16 @@
 
         color: var(--color-light);
 
+        @include mobile{
+            width: 358px;
+            height: 36px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
     }
 
     &__button{
@@ -45,6 +70,10 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 20px;
+
+        @include mobile{
+            width: 358px;
+        }
 
     }
 }

@@ -9,6 +9,12 @@
     padding: 60px 100px;
     background: var(--color-light);
     position: relative;
+
+    @include mobile{
+      padding: 0px 8px 64px 8px;
+      gap: 24px;
+      margin: 0px 8px 0px 8px;
+    }
   }
 
   &__title {
@@ -19,6 +25,11 @@
     font-size: 26px;
     line-height: 35px;
     color: var(--color-dark);
+
+    @include mobile{
+      width: 358px;
+      height: 35px;
+    }
   }
 
   &__content {
@@ -105,5 +116,9 @@
     right: 114px;
     border-radius: 12px;
     color: var(--color-icon-muted);
+
+    @include mobile{
+      display: none;
+    }
   }
 }

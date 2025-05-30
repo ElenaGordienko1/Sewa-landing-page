@@ -7,6 +7,13 @@
     gap: 20px;
     padding: 60px 100px;
     background: var(--color-light);
+
+    @include mobile{
+      padding: 0px 8px 64px 8px;
+      gap: 24px;
+      margin: 0px 8px 0px 8px;
+      overflow: hidden;
+    }
   }
 
   &__text {
@@ -16,6 +23,12 @@
     align-items: center;
     width: 1400px;
     height: 40px;
+
+    @include mobile{
+      gap: 20px;
+      width: 358px;
+      height: 40px;
+    }
   }
 
   &__title {
@@ -24,6 +37,12 @@
     align-items: center;
     gap: 8px;
 
+    @include mobile{
+      gap: 8px;
+      width: 246px;
+      height: 40px;
+    }
+
     &-text {
       width: 202px;
       height: 35px;
@@ -31,6 +50,8 @@
       font-size: 26px;
       line-height: 35px;
       color: var(--color-dark);
+      white-space: nowrap;
+      
     }
   }
 

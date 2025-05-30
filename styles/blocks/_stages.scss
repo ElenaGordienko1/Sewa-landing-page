@@ -6,6 +6,12 @@
     padding: 0 100px 88px 120px;
     gap: 80px;
     background: var(--color-light);
+
+    @include mobile{
+      padding: 64px 8px 64px 8px;
+      gap: 24px;
+      margin: 0px 8px 0px 8px;
+    }
   }
 
   &__content {
@@ -18,6 +24,12 @@
   &__delivery {
     display: flex;
     gap: 83px;
+    width: 100%;
+
+    @include mobile{
+      flex-direction: column;
+      gap: 0px;
+    }
   }
 
   &__text {
@@ -28,6 +40,14 @@
       font-size: 48px;
       line-height: 65px;
       color: var(--color-dark);
+
+      @include mobile{
+        width: 247px;
+        height: 44px;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 44px;
+      }
     }
 
     &-description {
@@ -37,6 +57,23 @@
       font-size: 15px;
       line-height: 28px;
       color: var(--color-dark-description);
+
+      @include mobile{
+        width: 358px;
+        height: 56px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+      }
+    }
+
+    @include mobile{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      width: 358px;
+      height: 108px;
     }
   }
 
@@ -47,10 +84,22 @@
     gap: 16px;
     width: 1400px;
     height: 156px;
+
+    @include mobile{
+      flex-direction: column;
+      align-items: flex-start;
+      width: 358px;
+      height: 672px;
+    }
   }
 
   &__step {
     position: relative;
+
+    @include mobile{
+      width: 358px;
+      height: 156px;
+    }
 
     &-number {
       position: absolute;
@@ -69,6 +118,10 @@
       font-size: 20px;
       line-height: 28px;
       color: var(--color-light);
+
+      @include mobile{
+        bottom: 77px;
+      }
     }
 
     &-text {
@@ -83,6 +136,11 @@
       height: 113px;
       background: var(--color-grey);
       border-radius: 16px 16px 0px 0px;
+
+      @include mobile{
+        top:41px;
+        width: 358px;
+      }
     }
 
     &-title {
@@ -115,6 +173,13 @@
     background: var(--color-grey);
     border-radius: 20px  20px 0px 0px;
 
+    @include mobile{
+      position: relative;
+      width: 358px;
+      height: 512px;
+      z-index: 3;
+    }
+
     &-title {
       width: 465px;
       height: 33px;
@@ -122,6 +187,14 @@
       font-size: 24px;
       line-height: 33px;
       color: var(--color-dark);
+
+      @include mobile{
+        width: 310px;
+        height: 33px;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 33px;
+      }
     }
 
     &-input {
@@ -131,6 +204,14 @@
       gap: 16px;
       width: 465px;
       height: 120px;
+
+      @include mobile{
+          width: 310px;
+      }
+      &-input{
+        width: 310px;
+        height: 120px;
+      }
     }
 
     &-description {
@@ -140,6 +221,24 @@
       font-size: 14px;
       line-height: 19px;
       color: var(--color-dark-description);
+
+      @include mobile{
+        display: none;
+      }
+    }
+
+    &-description-mobile{
+      display: none;
+
+      @include mobile{
+        display: block;
+        width: 280px;
+        height: 19px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: var(--color-dark-description);
+      }
     }
 
     &-price {
@@ -150,6 +249,12 @@
       gap: 24px;
       width: 465px;
       height: 52px;
+
+      @include mobile{
+        gap: 24px;
+        width: 310px;
+        height: 67px;
+      }
     }
 
     &-info {
@@ -166,6 +271,14 @@
       font-size: 14px;
       line-height: 24px;
       color: var(--color-dark);
+
+      @include mobile{
+        padding: 8px;
+        gap: 16px;
+
+        width: 310px;
+        height: 128px;
+      }
     }
   }
 
@@ -202,12 +315,41 @@
       left: 422px;
       right: 0;
       top: 5px;
+
+      @include mobile {
+        display: none;
+
+      }
+    }
+
+    &-block-mobile{
+      display: none;
+
+      @include mobile {
+        position: absolute;
+        display: block;
+        width: 374px;
+        height: 180px;
+        left: -8px;
+        top: -39px;
+        z-index: 1;
+        background-color: var(--color-accent);
+
+      }
     }
 
     &-car {
       position: relative;
       left: 11px;
       top: 67px;
+
+      @include mobile{
+        width: 358.19px;
+        height: 151px;
+        top: 14px;
+        left: -11px;
+        z-index: 2;
+      }
     }
   }
 

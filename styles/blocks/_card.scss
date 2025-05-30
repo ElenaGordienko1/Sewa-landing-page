@@ -7,10 +7,15 @@
     height: 338px;
     background: var(--color-grey);
     border-radius: 20px;
-
+    
     &__image {
         position: absolute;
         height: 214px;
+
+        @include mobile{
+            position: relative;
+            z-index: 1;
+        }
 
         &-photo {
             position: relative;
@@ -82,5 +87,10 @@
     &__down {
         position: relative;
         top: 214px;
+        z-index: 3;
+
+        @include mobile{
+            position: static;
+        }
     }
 }

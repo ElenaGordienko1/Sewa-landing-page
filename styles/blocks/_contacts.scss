@@ -1,6 +1,10 @@
 .contacts {
     &__inner {
         background: url('/images/contacts.png') right/cover no-repeat;
+        @include mobile{
+            margin: 0px 8px 0px 8px;
+            padding: 0px;
+        }
     }
 
     &__body {
@@ -12,6 +16,14 @@
         isolation: isolate;
         width: 1600px;
         height: 629px;
+
+        @include mobile{
+            padding: 16px 8px 24px 8px;
+            gap: 24px;
+            flex-direction: column;
+            width: 358px;
+            height: 944px;
+        }
     }
 
     &__info {
@@ -29,6 +41,15 @@
             font-size: 48px;
             line-height: 65px;
             color: var(--color-light);
+
+            @include mobile{
+                width: 358px;
+                height: 44px;
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 44px;
+
+            }
         }
 
         &-description {
@@ -38,6 +59,14 @@
             font-size: 14px;
             line-height: 150%;
             color: var(--color-light-90);
+
+            @include mobile{
+                width: 358px;
+                height: 42px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+            }
         }
 
         &-text {
@@ -45,6 +74,17 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 12px;
+
+            @include mobile{
+                width: 358px;
+                height: 98px;
+
+            }
+        }
+
+        @include mobile{
+            width: 358px;
+            height: 259px;
         }
     }
 
@@ -56,6 +96,14 @@
         gap: 24px;
         width: 738px;
         height: 235px;
+
+        @include mobile{
+            flex-wrap: wrap;
+            gap: 16px;
+
+            width: 358px;
+            height: 137px;
+        }
     }
 
     &__inf {
@@ -67,6 +115,7 @@
         min-width: 316px;
         height: 47px;
 
+
         &-title {
             width: 256px;
             height: 19px;
@@ -74,6 +123,82 @@
             font-size: 14px;
             line-height: 19px;
             color: var(--color-light-60);
+
+            @include mobile{
+            width: auto;
+            height: auto;
+        }
+        }
+
+        &-link {
+            height: 20px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: -0.04em;
+            color: var(--color-light);
+        }
+    }
+
+    &__inf-down {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        width: 316px;
+        height: 47px;
+
+        @include mobile{
+            width: 179px;
+        }
+
+        &-title {
+            width: 256px;
+            height: 19px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: var(--color-light-60);
+
+            @include mobile{
+            width: auto;
+            height: auto;
+        }
+        }
+
+        &-link {
+            height: 20px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: -0.04em;
+            color: var(--color-light);
+        }
+    }
+
+    &__inf-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+
+        @include mobile{
+            gap: 0px;
+            flex-direction: row;
+        }
+        
+        &-title {
+            width: 256px;
+            height: 19px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: var(--color-light-60);
+
+            @include mobile{
+            width: auto;
+            height: auto;
+        }
         }
 
         &-link {
@@ -98,6 +223,12 @@
         backdrop-filter: blur(60px);
         border-radius: 24px;
 
+        @include mobile{
+            padding: 16px;
+            width: 358px;
+            height: 537px;
+        }
+
         &-title {
             width: 550px;
             height: 29px;
@@ -105,6 +236,10 @@
             font-size: 24px;
             line-height: 33px;
             color: var(--color-light);
+
+            @include mobile{
+                width: 358px;
+            }
         }
 
         &-input {
@@ -119,6 +254,10 @@
         align-items: flex-start;
         gap: 24px;
         width: 550px;
+
+        @include mobile{
+            width: 358px;
+        }
     }
 
     &__field-input:invalid,
@@ -158,6 +297,15 @@
         gap: 16px;
         width: 550px;
         height: 81px;
+
+        @include mobile{
+            flex-direction: column;
+            gap: 16px;
+
+            width: 326px;
+            height: 178px;
+
+        }
     }
 
     &__field {
@@ -171,6 +319,12 @@
         &-input {
             width: 267px;
             height: 54px;
+
+            @include mobile{
+                width: 326px;
+                height: 54px;
+
+            }
         }
     }
 
@@ -182,11 +336,22 @@
         width: 550px;
         height: 126px;
         resize: none;
+
+        @include mobile{
+            width: 326px;
+            height: 126px;
+
+        }
     }
 
     &__textarea {
         width: 550px;
         height: 99px;
+
+        @include mobile{
+            width: 326px;
+            height: 99px;
+        }
     }
 
     &__button {
@@ -195,29 +360,40 @@
         align-items: center;
         width: 100%;
 
+        @include mobile{
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
         &-checkbox {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 12px;
-        position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+            position: relative;
         }
 
         &-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        gap: 10px;
-        width: 120px;
-        height: 52px;
-        background: var(--color-dark-alt);
-        border-radius: 16px;
-        font-family: 'Open Sans';
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 20px;
-        color: var(--color-light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            gap: 10px;
+            width: 120px;
+            height: 52px;
+            background: var(--color-dark-alt);
+            border-radius: 16px;
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: var(--color-light);
+
+            @include mobile{
+                width: 326px;
+                height: 52px;
+            }
         }
     }
     &__checkbox {

@@ -47,6 +47,12 @@
                     <a href="tel: +7 123 456 70 20" class="header__contact-tel contact hidden-mobile"> +7 123 456 70 20 </a>
                     <p class="header__contact-text contact hidden-mobile">Написать в Whatsapp</p>
                 </div>
+            <button 
+                class="button__burger-menu burger-button visible-mobile"
+                type="button"
+                onclick="mobileOverlay.showModal()">
+                <span class="visually-hidden">Open navigation menu</span>
+            </button>
             </div>
         </div>
     </header>
@@ -57,6 +63,7 @@
                     <div class="hero__main">
                         <h1 class="hero__title">Авто из Японии, Кореи, Китая и Европы </h1>
                         <p class="hero__description">Экономия с первого шага! Мы не берем комиссию за подбор авто, в отличие <br> от большинства компаний</p>
+                        <p class="hero__description-mobile">Высокий сервис и качество, стоимость автомобилей до 30% ниже рынка</p>
                         <button class="hero__button button">Расчитать стоимость</button>
                         <div class="hero__benefits container">
                             <div class="hero__stats">
@@ -74,6 +81,27 @@
                                 <div class="hero__stats-item">
                                     <h3 class="hero__stats-char">0%</h3>
                                     <p class="hero__stats-desc">комиссии за подбор авто</p>
+                                </div>
+                                <div class="hero__stats-item">
+                                    <h3 class="hero__stats-char">2-4 недели</h3>
+                                    <p class="hero__stats-desc">минимальный срок доставки</p>
+                                </div>
+                            </div>
+                            <div class="hero__stats-mobile">
+                                <div class="hero__stats-item">
+                                    <div class="hero__stats-rating">
+                                        <img src="./images/star.svg" alt="" class="hero__stats-image" width="28" height="28" loading="lazy">
+                                        <h3 class="hero__stats-char">4.9</h3>
+                                    </div>
+                                    <p class="hero__stats-desc">рейтинг клиентов</p>
+                                </div>
+                                <div class="hero__stats-item">
+                                    <h3 class="hero__stats-char">8</h3>
+                                    <p class="hero__stats-desc">лет на рынке</p>
+                                </div>
+                                <div class="hero__stats-item">
+                                    <h3 class="hero__stats-char">5000 +</h3>
+                                    <p class="hero__stats-desc">авто привезли</p>
                                 </div>
                                 <div class="hero__stats-item">
                                     <h3 class="hero__stats-char">2-4 недели</h3>
@@ -104,7 +132,7 @@
                                 <p class="popular-cars__brand-name">SsangYong</p>
                             </div>
                             <div class="popular-cars__country">
-                                <img src="./images/brands/Korea.svg" alt=""  width="64" height="45" loading="lazy">
+                                <img src="./images/brands/Korea.svg" class="popular-cars__country-knr" alt="" loading="lazy">
                             </div>
                         </div>
                         <div class="popular-cars__grid">
@@ -402,21 +430,22 @@
                         <h3 class="popular-cars__title" id="china">Популярные китайские авто</h3>
                         <div class="popular-cars__brands">
                             <div class="popular-cars__brand">
-                                <img src="./images/brands/Zeekr.svg" alt="" class="popular-cars__brand-image" style= "width: 81px; height: 20px;">
+                                <img src="./images/brands/Zeekr.svg" alt="" class="popular-cars__brand-zeekr" width="81" height="20">
+                                <img src="./images/brands/zeekr-mini.svg" alt="" class="popular-cars__brand-zeekr-abb" width="20" height="20" >
                             </div>
                             <div class="popular-cars__brand">
                                 <img src="./images/brands/Chery.svg" alt="" class="popular-cars__brand-image">
                                 <p class="popular-cars__brand-name">Chery</p>
                             </div>
                             <div class="popular-cars__brand">
-                                <img src="./images/brands/Haval.svg" alt="" class="popular-cars__brand-image" style= "width: 46px; height: 28px;">
+                                <img src="./images/brands/Haval.svg" alt="" class="popular-cars__brand-image" width="46" height="28">
                             </div>
                             <div class="popular-cars__brand">
                                 <img src="./images/brands/Changan.svg" alt="" class="popular-cars__brand-image">
                                 <p class="popular-cars__brand-name">Changan</p>
                             </div>
                             <div class="popular-cars__country">
-                                <img src="./images/brands/China.svg" alt=""  width="80" height="52" loading="lazy">
+                                <img src="./images/brands/China.svg" alt=""  class="popular-cars__country-chn" loading="lazy">
                             </div>
                         </div>
                         <div class="popular-cars__grid">
@@ -485,8 +514,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="popular-cars__card card">
-                                    <div class="card__image">
+                                <div class="popular-cars__card">
+                                    <div class="card">
+                                        <div class="card__image">
                                         <img src="./images/car.jpg" alt="" class="card__image-photo" width="338" height="214" loading="lazy">
                                         <h6 class="card__image-characteristic">1 тыс. км</h6>
                                     </div>
@@ -499,6 +529,7 @@
                                             <p class="card__price-price">5 500 000 ₽</p>
                                             <button class="popular-cars__button button--transparent">Оставить заявку</button>
                                         </div>
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="popular-cars__card card">
@@ -557,7 +588,7 @@
                         <h3 class="popular-cars__title" id="europa">Популярные европейские авто</h3>
                         <div class="popular-cars__brands">
                             <div class="popular-cars__brand">
-                                <img src="./images/brands/audi.svg" alt="" class="popular-cars__brand-image" style= "width: 40px; height: 40px;">
+                                <img src="./images/brands/audi.svg" alt="" class="popular-cars__brand-image" >
                             </div>
                             <div class="popular-cars__brand">
                                 <img src="./images/brands/Volkswagen.svg" alt="" class="popular-cars__brand-image">
@@ -572,7 +603,7 @@
                                 <p class="popular-cars__brand-name">Mersedes</p>
                             </div>
                             <div class="popular-cars__country">
-                                <img src="./images/brands/Europa.svg" alt="" width="80" height="52" loading="lazy">
+                                <img src="./images/brands/Europa.svg" alt="" class="popular-cars__country-eur" width= "26" height = "26" loading="lazy">
                             </div>
                         </div>
                         <div class="popular-cars__grid">
@@ -764,6 +795,7 @@
                             <div class="stages__form-text">
                                 <h3 class="stages__form-title">Стоимость доставки</h3>
                                 <p class="stages__form-description">Подготовим машину к отгрузке и отправке в ваш город автовозом Минимальный срок доставки 2-4 недели</p>
+                                <p class="stages__form-description-mobile">Минимальный срок доставки 2-4 недели</p>
                             </div>
                             <div class="stages__form-input">
                                 <div class="custom-select">
@@ -801,6 +833,7 @@
                         </div>
                         <div class="stages__image">
                             <img src="./images/block.svg" alt="" class="stages__image-block">
+                            <div class="stages__image-block-mobile"></div>
                             <img src="./images/stages-car.svg" alt="" class="stages__image-car">
                         </div>
                     </div>
@@ -826,10 +859,12 @@
                                 <p>SEWA MOTORS — компания, которая занимается экспортом автомобилей и запчастей из Южной Кореи. <br> Мы не посредники, все автомобили мы выкупаем напрямую у дилеров / заводов или с аукционов и привозим их под ключ за 2-4 недели. Компания SEWA MOTORS на рынке уже более 10 лет и обладает заслуженной репутацией. </p>
                                 <p>Мы работаем с партнерами в России и странах СНГ, ОАЭ, Европе. В том числе, наша компания получила две золотых статуэтки - награду от президента Южной Кореи за оборот более 20.000.000$ / год и 25.000.000$ / год. Экспортная компания SEWA MOTORS одна из крупнейших в Южной Корее.</p>
                             </div>
+                            <div class="about-us__text-description-mobile">Мы — ведущая экспортная компания из Южной Кореи, специализирующаяся на поставке автомобилей в страны по всему миру. Наша компания предлагает выгодные условия сотрудничества с возможностью с возможностью приобрести авто выгоднее на 30%. Мы гордимся тем, что предоставляем нашим клиентам не только высококачественные автомобили, но и первоклассный сервис. С нами вы получите надежные решения и максимальную выгоду от каждой сделки.</div>
                         </div>
                         <div class="about-us__reason">
                             <div class="about-us__reason-text">
                                 <p class="about-us__reason-title">Почему стоит выбрать нас?</p>
+                                <p class="about-us__reason-title-mobile">Почему мы- это лучший выбор</p>
                                 <p class="about-us__reason-description">Работаем на прямую, по этому не берем никаких комиссий за наши услуги</p>
                             </div>
                             <div class="about-us__reason-grid">
@@ -876,13 +911,57 @@
                                     <p class="about-us__cell-text">Мы работаем напрямую с дилерами, заводами и аукционами ЮК и осуществляем полный контроль на всех этапах: от подбора автомобиля до его доставки из Южной Кореи.</p>
                                 </div>
                             </div>
+                            <div class="about-us__reason-grid-mobile">
+                                <div class="about-us__cell">
+                                    <div class="about-us__cell-icon">
+                                        <img src="./images/icon/description.svg" alt="" width="24" height="24">
+                                    </div>
+                                    <p class="about-us__cell-title">Таможенное оформление</p>
+                                    <p class="about-us__cell-text">Поможем растоможить автомобиль и оформить все необходимые документы. </p>
+                                </div>
+                                <div class="about-us__cell">
+                                    <div class="about-us__cell-icon">
+                                        <img src="./images/icon/schedule.svg" alt="" width="24" height="24">
+                                    </div>
+                                    <p class="about-us__cell-title">Экономия времени</p>
+                                    <p class="about-us__cell-text">Мы работаем быстро и эффективно, осмотр авто за 24 часа с момента подачи заявки клиентом.</p>
+                                </div>
+                                <div class="about-us__cell">
+                                    <div class="about-us__cell-icon">
+                                        <img src="./images/icon/saving.svg" alt="" width="24" height="24">
+                                    </div>
+                                    <p class="about-us__cell-title">Персональный менеджер</p>
+                                    <p class="about-us__cell-text">Каждому клиенту назначается персональный менеджер-ассистент, который окажет профессиональную помощь в выборе автомобиля.</p>
+                                </div>
+                                <div class="about-us__cell">
+                                    <div class="about-us__cell-icon">
+                                        <img src="./images/icon/verified.svg" alt="" width="24" height="24">
+                                    </div>
+                                    <p class="about-us__cell-title">Тщательный отбор</p>
+                                    <p class="about-us__cell-text">Наши профессионалы тщательно отбирают автомобили, обеспечивая их отличное состояние и соответствие самым высоким стандартам.</p>
+                                </div>
+                                <div class="about-us__cell">
+                                    <div class="about-us__cell-icon">
+                                        <img src="./images/icon/thumb_up.svg" alt="" width="24" height="24">
+                                    </div>
+                                    <p class="about-us__cell-title">Проверенные аукционы</p>
+                                    <p class="about-us__cell-text">Мы работаем со всеми крупными торговыми площадками и аукционами Кореи.</p>
+                                </div>
+                                <div class="about-us__cell">
+                                    <div class="about-us__cell-icon">
+                                        <img src="./images/icon/group.svg" alt="" width="24" height="24">
+                                    </div>
+                                    <p class="about-us__cell-title">Экспорт санкционных авто</p>
+                                    <p class="about-us__cell-text">Наша команда успешно отработала схемы перевозок санкционных авто и оперативно решает поступающие проблемы</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="about-us__image">
                         <img src="./images/about-us-logo.png" alt="" class="about-us__image-logo" width="467" height="500">
                         <div class="about-us__image-info">
                             <p class="about-us__image-text">Экономия с первого шага! Мы не берем комиссию за подбор авто, в отличие от большинства компаний</p>
-                            <img src="./images/promotion.svg" class="about-us__image-promotion" alt="" width="143" height="143">
+                            <img src="./images/promotion.svg" class="about-us__image-promotion" alt="">
                         </div>
                     </div>
                 </div>
@@ -1285,13 +1364,15 @@
                                 <div class="contacts__info-description">Оставьте свою заявку и наш менеджер свяжется с Вами для уточнения деталей.</div>
                             </div>
                             <div class="contacts__content">
-                                <div class="contacts__inf">
-                                    <p class="contacts__inf-title">Позвонить</p>
-                                    <a href="tel: 878-88-01899" class="contacts__inf-link"> 878-88-01899 </a>
-                                </div>
-                                <div class="contacts__inf">
-                                    <p class="contacts__inf-title" >Написать</p>
-                                    <a href="" class="contacts__inf-link"> sewa2020@daum.net </a>
+                                <div class="contacts__inf-mobile">
+                                    <div class="contacts__inf-down">
+                                        <p class="contacts__inf-title">Позвонить</p>
+                                        <a href="tel: 878-88-01899" class="contacts__inf-link"> 878-88-01899 </a>
+                                    </div>
+                                    <div class="contacts__inf-down">
+                                        <p class="contacts__inf-title" >Написать</p>
+                                        <a href="" class="contacts__inf-link"> sewa2020@daum.net </a>
+                                    </div>
                                 </div>
                                 <div class="contacts__inf">
                                     <p class="contacts__inf-title">Адрес</p>
@@ -1384,13 +1465,16 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="header__contact">
-                    <div class="header__contact-social contact hidden-mobile">
+                <div class="header__contact footer__contact">
+                    <div class="header__contact-social contact">
                         <a href="/" class="header__social-link">
                             <img src="./images/social/tg.svg" alt="Telegram">
                         </a>
                         <a href="/" class="header__social-link">
                             <img src="./images/social/Youtube.svg" alt="Youtube">
+                        </a>
+                        <a href="/" class="header__social-link footer__inst">
+                            <img src="./images/social/instagram.svg" alt="Instagram">
                         </a>
                         <a href="/" class="header__social-link">
                             <img src="./images/social/vk.svg" alt="VK">
@@ -1398,12 +1482,81 @@
                     </div>
                 </div>
             </div>
+            <nav class="footer__menu-mobile">
+                <ul class="header__menu-list footer__menu-list">
+                    <li class="header__menu-item">
+                        <a href="#japan" class="header__menu-link footer__menu-link">Японские авто</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#korea" class="header__menu-link footer__menu-link">Корейские авто</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#china" class="header__menu-link footer__menu-link">Китайские авто</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#europa" class="header__menu-link footer__menu-link">Европейские авто</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#contacts" class="header__menu-link-end footer__menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
             <div class="footer__additionally">
                 <p> Все права зарегистрированы.</p>
                 <p>© 2021 Sewa Motors</p>
             </div>
         </div>
     </footer>
+    <dialog class="mobile-overlay visible-mobile"  id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <a href="/" class="mobile-overlay__logo">
+                <img class="mobile-overlay__logo-image" src="./images/logo.svg" alt="SEWA" loading="lazy">
+            </a>
+            <button class="mobile-overlay__close-button cross-button" type="submit">
+                <span class="visually-hidden">Close navigation menu</span>
+            </button>
+        </form>
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">Японские авто</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">Корейские авто</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">Китайские авто</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">Европейские авто</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-overlay__contact">
+            <div class="mobile-overlay__contact-social contact">
+                <a href="/" class="mobile-overlay__social-link">
+                    <img src="./images/social/tg.svg" alt="Telegram">
+                </a>
+                <a href="/" class="mobile-overlay__social-link">
+                    <img src="./images/social/Youtube.svg" alt="Youtube">
+                </a>
+                <a href="/" class="mobile-overlay__social-link">
+                    <img src="./images/social/instagram.svg" alt="Instagram">
+                </a>
+                <a href="/" class="mobile-overlay__social-link">
+                    <img src="./images/social/vk.svg" alt="VK">
+                </a>    
+            </div>
+            <div class="mobile-overlay__contact-info">
+                <a href="tel: +7 123 456 70 20" class="mobile-overlay__contact-tel "> +7 123 456 70 20 </a>
+                <p class="mobile-overlay__contact-text">Написать в Whatsapp</p>
+            </div>
+        </div>
+        </div>
+    </dialog>
     <script src="js/scroll-slider.js"></script>
     <script src="js/custom-select.js"></script>
     <script src="js/contactForm.js"></script>
